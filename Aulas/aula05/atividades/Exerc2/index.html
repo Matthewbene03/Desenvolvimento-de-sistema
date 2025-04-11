@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Exerc2</title>
+</head>
+<body>
+    <h1>Aplicação Financeira</h1>
+    <hr class="centralizar70porc">
+
+    <div class="container centralizar70porc ">
+        <form class="grid3Col2Row">
+            <div class="valor">
+                <label for="id_valor">Valor da aplicação</label><br>
+                <input id="id_valor" type="number">
+            </div>
+            <div class="taxa">
+                <label for="id_taxa">Taxa de juros</label><br>
+                <input id="id_taxa" type="number">
+            </div>
+            <div class="qtdMeses">
+                <label for="id_qtdMeses">Quantidade de meses</label><br>
+                <input id="id_qtdMeses" type="number">
+            </div>
+            <div class="btnCalcular">
+                <button id="id_BtnCalcular" type="button" onclick="calculaRendimento()">Calcular</button>
+            </div>
+        </form>
+
+        <section id="id_section">
+            <h2>Resultado</h2>
+            <p id="resultado"></p>
+        </section>
+
+        <script src="./js/script.js"></script>
+    </div>
+
+</body>
+</html>

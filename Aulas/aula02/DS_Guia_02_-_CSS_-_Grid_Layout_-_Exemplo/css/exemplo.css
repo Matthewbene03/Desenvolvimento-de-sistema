@@ -1,0 +1,67 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#container{
+    display: grid;
+    grid-template-areas: "cabecalho"
+                         "galeria";
+}
+
+#cabecalho{
+    grid-area: cabecalho;
+    background-color: black;
+
+    /*sub-grid do container cabecalho*/
+    display: grid;
+    grid-template-areas: "logo opcoes";
+    justify-content: space-between;
+    padding: 15px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+#logo{
+    grid-area: logo;
+}
+
+#opcoes{
+    grid-area: opcoes;
+}
+
+#logo a{
+    padding-right: 10px;
+}
+
+#opcoes a{
+    padding-left: 10px;
+}
+
+#galeria{
+    grid-area: galeria;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    
+    /*sub-grid do container galeria*/
+    display: grid;
+    grid-template-columns: 30vw 30vw 30vw;  
+}
+
+#galeria div p{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+#galeria div img{
+    width: 80%;
+    margin-left: 10%;
+    height: 30vh;
+}
+
+
+

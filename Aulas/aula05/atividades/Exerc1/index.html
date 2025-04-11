@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Exerc1</title>
+</head>
+
+<body>
+    <h1>Cálculo da distância</h1>
+    <hr class="centralizar60porc">
+
+    <div class="container centralizar60porc ">
+        <form class="grid2Col2Row">
+            <div class="x1">
+                <label for="id_x1">X1</label><br>
+                <input id="id_x1" type="number">
+            </div>
+            <div class="y1">
+                <label for="id_y1">Y1</label><br>
+                <input id="id_y1" type="number">
+            </div>
+            <div class="x2">
+                <label for="id_x2">X2</label><br>
+                <input id="id_x2" type="number">
+            </div>
+            <div class="y2">
+                <label for="id_y2">Y2</label><br>
+                <input id="id_y2" type="number">
+            </div>
+            <div class="btnCalcular">
+                <button id="id_BtnCalcular" type="button" onclick="calculaDistancia()">Calcular</button>
+            </div>
+        </form>
+
+        <section id="id_section">
+            <h2>Resultado</h2>
+            <p id="resultado"></p>
+        </section>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

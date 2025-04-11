@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Exer2</title>
+</head>
+
+<body>
+    <h1>Aula 04: Exer2</h1>
+    <hr>
+
+    <form class="forms centralizar80porc">
+        <div class="nome">
+            <label for="nome">Nome</label><br>
+            <input id="nome" type="text">
+        </div>
+        <div class="peso">
+            <label for="peso">Peso</label><br>
+            <input id="peso" type="text">
+        </div>
+        <div class="altura">
+            <label for="altura">Altura</label><br>
+            <input id="altura" type="text">
+        </div>
+        <div class="botao">
+            <button class="BtnAdicionar" onclick="addPessoa()">Adicionar</button>
+        </div>
+    </form>
+
+    <div class="table centralizar80porc">
+        <table>
+            <tr class="col">
+                <th>Nome</th>
+                <th>Peso</th>
+                <th>Altura</th>
+                <th>IMC</th>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>90</td>
+                <td>1.90</td>
+                <td>24.93</td>
+            </tr>
+            <tr>
+                <td>José</td>
+                <td>80</td>
+                <td>1.60</td>
+                <td>31.25</td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

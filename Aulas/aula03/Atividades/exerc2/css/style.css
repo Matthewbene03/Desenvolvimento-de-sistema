@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    border: 2px solid red;
+}
+
+.paiGrid {
+    display: grid;
+    grid-template-areas:
+        'textF forms'
+        'textF forms'
+        'textF forms'
+        'footer footer';
+    /*grid-template-rows: repeat(4, 1fr);*/
+    border: 2px solid green;
+    height: 100%;
+}
+
+div.textFace {
+    grid-area: textF;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #f0f2f5;
+    border: 2px solid yellow;
+}
+
+div.textFace h1 {
+    color: rgb(40, 88, 219);
+    font-size: 70px
+}
+
+div.textFace p {
+    color: black;
+    font-size: 30px;
+}
+
+div.forms {
+    grid-area: forms;
+    width: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f2f5;
+    border: 2px solid black;
+}
+
+div.formsFilho {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ffffff;
+    border-radius: 25px;
+    height: auto;
+    width: 80%;
+    margin: 0 10%;
+    padding: 50px 0px;
+}
+
+div.formsFilho form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+div.formsFilho form input {
+    width: 80%;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+div.formsFilho form input::placeholder{
+    color: gray;
+    font-size: 17px;
+}
+
+
+div.formsFilho form button {
+    width: 80%;
+    height: 60px;
+    background-color: #1877f2;
+    color: white;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 7px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.formsFilho a {
+    text-decoration: none;
+    color: #6daef3;
+    padding: 20px;
+    font-size: 18px;
+}
+
+hr{
+    color: black;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+div.formsFilho button {
+    border: none;
+    border-radius: 7px;
+    background-color: #42b72a;
+    padding: 19px 17px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    font-size: 30px;
+    border: 2px solid blue;
+}
+
+@media screen and (max-width: 800px) {
+    .paiGrid {
+        grid-template-areas:
+            'textF'
+            'forms'
+            'forms'
+            'footer';
+    }
+
+    div.textFace {
+        align-items: center;
+    }
+
+    div.textFace h1 {
+        color: rgb(40, 88, 219);
+        font-size: 50px
+    }
+
+    div.textFace p {
+        color: black;
+        font-size: 25px;
+        margin: 0 10%;
+    }
+
+    div.forms {
+        width: 100%;
+    }
+}

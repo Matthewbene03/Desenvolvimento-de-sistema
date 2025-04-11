@@ -1,0 +1,49 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    margin-top: 5vh;
+}
+
+#container{
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60vh 25vh;
+    grid-template-areas: "E D"
+                         "R R";
+    grid-gap: 10px;
+}
+
+#esquerda{
+    grid-area: E;
+    background-color: red;
+}
+
+#direita{
+    grid-area: D;
+    background-color: green;
+}
+
+#rodape{
+    grid-area: R;
+    background-color: blue;
+}
+
+/* a media query será aplicada para ajustar o layout quando a tela for menor que 500px*/
+@media screen and (max-width: 500px) {
+    #container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 60vh 25vh;
+
+        grid-template-areas: "D"
+                             "R";
+    }
+
+    #esquerda{
+        display:none;
+    }
+}
