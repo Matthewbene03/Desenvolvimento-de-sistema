@@ -1,0 +1,20 @@
+.headerMenu{
+    height: 130px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.centralizar80porc{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.titulo{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

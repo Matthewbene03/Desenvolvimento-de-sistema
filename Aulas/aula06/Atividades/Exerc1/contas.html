@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/class.css">
+    <link rel="stylesheet" href="./css/conta.css">
+    <title>Exerc1</title>
+</head>
+<body onload="exibirTabela()">
+
+    <header class="headerMenu">
+        <nav>
+            <a href="#">Exercício</a>
+            <a href="index.html">Cadastro</a>
+            <a href="contas.html">Conta</a>
+        </nav>
+    </header>
+
+    <section class="centralizar80porc titulo">
+        <h1>Conta</h1>
+        <hr>
+        <div class="buttonAdd">
+            <a href="index.html"><button type="button">Cadastrar</button></a>
+        </div>
+    </section>
+
+    <section class="sectionTable centralizar80porc">
+        <table class="table">
+            <thead>
+                <tr class="col">
+                    <th>Número da conta</th>
+                    <th>Nome do cliente</th>
+                    <th>Saldo</th>
+                </tr>
+            </thead>
+            <tbody id="id_tbody" class="tbody">
+
+            </tbody>
+        </table>
+    </section>
+
+
+    <section class="sectionConta centralizar80porc">
+        <form class="containerConta">
+            <div class="numConta">
+                <label for="id_numeroConta">Número da conta</label><br>
+                <input type="number" name="numConta" id="id_numeroConta">
+            </div>
+            <div class="valor">
+                <label for="id_valor">Valor</label><br>
+                <input type="number" name="valor" id="id_valor">
+            </div>
+            <div class="operacao">
+                <label for="id_operacao">Operação</label>
+                <select id="id_operacao" name="Operação">
+                    <option selected disabled value="">Selecione uma operação</option>
+                    <option value="saque">Saque</option>
+                    <option value="deposito">Depósito</option>
+                </select>
+            </div>
+            <div class="buttonAdd">
+                <button type="button" onclick="transacao()" onclick="exibirTabela()">Confirmar</button>
+            </div>
+        </form>
+    </section>
+
+    <script src="./js/Script.js"></script>
+</body>
+</html>

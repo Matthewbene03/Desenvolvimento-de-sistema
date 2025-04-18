@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/class.css">
+    <link rel="stylesheet" href="./css/controleVagas.css">
+    <title>Exerc2</title>
+</head>
+
+<body onload="preencherLinhasTabela(), preencherSelect(), usuarioOn()">
+
+    <header>
+        <nav class="navMenu">
+            <div class="link">
+                <a href="#">Exercício</a>
+                <a href="controleVagas.html">Vagas</a>
+                <a href="index.html">sair</a>
+            </div>
+            <div class="login">
+                <h2 id="login">Login: </h2>
+            </div>
+        </nav>
+    </header>
+
+    <section class="titulo centralizar80porc">
+        <h1>Controle de vagas</h1>
+        <hr>
+    </section>
+
+    <section class="formCarros centralizar80porc">
+        <form class="grid2Col2Row">
+            <div class="placaCarro">
+                <label for="id_placaCarro">Placa do carro</label><br>
+                <input type="text" id="id_placaCarro">
+            </div>
+            <div class="numVaga">
+                <label for="id_numVaga">Número da vaga</label><br>
+                <select name="numVaga" id="id_numVaga">
+                    <option selected disabled>Selecione uma vaga</option>
+                </select>
+            </div>
+            <div class="buttonReg">
+                <button type="button" onclick="reservarVaga()">Registrar</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="sectionTable centralizar80porc">
+        <table class="table">
+            <thead>
+                <tr class="col">
+                    <th>Número da vaga</th>
+                    <th>Placa do carro</th>
+                    <th>Login de cadastro</th>
+                </tr>
+            </thead>
+            <tbody id="id_tbody">
+            </tbody>
+        </table>
+    </section>
+
+    <script src="./js/indexScript.js"></script>
+    <script src="./js/controleVagas.js"></script>
+</body>
+
+</html>

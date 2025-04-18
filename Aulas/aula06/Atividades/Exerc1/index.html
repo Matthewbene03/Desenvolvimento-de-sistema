@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/class.css">
+    <link rel="stylesheet" href="./css/cadastro.css">
+    <title>Exerc1</title>
+</head>
+<body onload="inicializarLocalStorage()">
+
+    <header class="headerMenu">
+        <nav>
+            <a href="#">Exercício</a>
+            <a href="index.html">Cadastro</a>
+            <a href="contas.html">Conta</a>
+        </nav>
+    </header>
+
+    <section class="centralizar80porc titulo">
+        <h1>Cadastro de conta</h1>
+        <hr>
+    </section>
+
+    <section class="sectionConta centralizar80porc">
+        <form class="containerCadastroConta">
+            <div class="numConta">
+                <label for="id_numConta">Número da conta</label><br>
+                <input type="number" name="numConta" id="id_numConta">
+            </div>
+            <div class="nomeCliente">
+                <label for="id_nomeCliente">Nome do cliente</label><br>
+                <input type="text" name="nomeCliente" id="id_nomeCliente">
+            </div>
+            <div class="buttonAdd">
+                <button type="button" onclick="cadastrarConta()">Cadastrar</button>
+            </div>
+        </form>
+    </section>
+
+    <script src="./js/Script.js"></script>
+</body>
+</html>

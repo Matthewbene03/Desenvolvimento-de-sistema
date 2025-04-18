@@ -1,0 +1,14 @@
+.navMenu{
+    height: 130px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.centralizar80porc{
+    width: 80%;
+    margin: 0 auto;
+}

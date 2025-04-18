@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+
+.headerMenu nav{
+    margin-left: 2%;
+}
+
+.headerMenu nav a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.headerMenu nav a:hover{
+    border-bottom: 2px solid white;
+}
+
+.titulo h1{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+.titulo hr{
+    border: 1px solid black;
+}
+
+
+.sectionTable{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.table{
+    width: 100%;
+}
+
+.table thead tr th{
+    text-align: left;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+tr{
+    height: 40px;
+    border-top: 2px solid rgb(185, 185, 185);
+    border-bottom: 2px solid rgb(185, 185, 185);
+    padding: 10px 20px;
+}
+
+.table tbody tr td{
+    text-align: left;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+table, th, td{
+    border-top: 1px solid rgb(182, 182, 182);
+    border-bottom: 1px solid rgb(182, 182, 182);
+    border-collapse: collapse;
+}
+
+.col{
+    border-bottom: 3px solid rgb(182, 182, 182);
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+th, td{
+    padding: 15px;
+    text-align: left;
+}
+
+.containerConta{
+    display: grid;
+    grid-template-areas:
+    'numConta valor opera'
+    'Btn Btn Btn';
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px 0px;
+}
+
+.numConta{
+    grid-area: numConta;
+    width: 100%;
+}
+
+.valor{
+    grid-area: valor;
+    width: 100%;
+}
+
+.operacao{
+    grid-area: opera;
+    width: 100%;
+}
+
+.buttonAdd{
+    grid-area: Btn;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: end;
+    align-items: center;
+}
+
+input{
+    width: 100%;
+    height: 60px;
+    border: 1px solid rgb(185, 185, 185);
+    border-radius: 5px;
+    padding-left: 15px;
+}
+
+label{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-decoration: none;   
+}
+
+select{
+    width: 100%;
+    height: 60px;
+    border: 1px solid rgb(185, 185, 185);
+    border-radius: 5px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+button{
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid rgb(185, 185, 185);
+    background-color: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 20px 0px;
+}
+
+button:hover{
+    border: 2px solid black;
+    background-color: rgb(185, 185, 185);
+}

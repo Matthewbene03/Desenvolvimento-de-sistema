@@ -1,0 +1,50 @@
+<html>
+
+<head>
+	<title>Exemplo 03 - Formulário </title>
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+	<link type="text/css" rel="stylesheet" href="css/estilos.css" />
+</head>
+
+
+<body onload="configurar()">
+	<div class="bg-dark ps-3 d-flex flex-row">
+		<a class="p-2 text-light text-decoration-none fw-bold " href="#">Exemplo 03</a>
+		<a class="p-2 text-light text-decoration-none" href="exemplo03Formulario.html">Cadastro</a>
+		<a class="p-2 text-light text-decoration-none" href="exemplo03Tabela.html">Consulta</a>
+	</div>
+	
+	<div class="container mt-4">
+		<h1 class="text-center border-bottom border-danger mb-4">Cadastro de Pessoa</h1>
+		<form id="formulario" action="#" method="post">
+			<fieldset>
+				<div class="row mb-3">
+					<div class="col-md-3">
+						<label class="form-label" for="cpf">CPF</label>
+						<input class="form-control" id="cpf" name="cpf" type="text" required>
+					</div>
+					<div class="col-md-6">
+						<label class="form-label" for="nome">Nome</label>
+						<input class="form-control" id="nome" name="nome" type="text" required>
+					</div>
+					<div class="col-md-3">
+						<label class="form-label" for="idade">Idade</label>
+						<input class="form-control" id="idade" name="idade" type="number" required>
+					</div>										
+				</div>
+				<div class="row mb-3">
+					<div class="col-12 d-flex justify-content-end">
+						<button class="btn btn-success" type="button" onclick="cadastrar()">Cadastrar</button>
+					</div>					
+				</div>
+			</fieldset>
+		</form>
+	</div>
+
+
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/pessoa.js"></script>
+	<script type="text/javascript" src="js/exemplo03Formulario.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table{
+            width: 100%;
+            text-align: left;
+        }
+
+        button{
+            padding: 10px 15px;
+            background-color: black;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
+    <title>Tabela</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Coluna1</th>
+                <th>Coluna2</th>
+                <th>Coluna3</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+            <!--<tr>
+                <td>Linha1 - Dado1</td>
+                <td>Linha1 - Dado2</td>
+                <td>Linha1 - Dado3</td>
+            </tr>
+            <tr>
+                <td>Linha2 - Dado1</td>
+                <td>Linha2 - Dado2</td>
+                <td>Linha2 - Dado3</td>
+            </tr>
+            <tr>
+                <td>Linha3 - Dado1</td>
+                <td>Linha3 - Dado2</td>
+                <td>Linha3 - Dado3</td>
+            </tr>-->
+        </tbody>
+    </table>
+
+    <button onclick="deletarLinha()">Deletar Linha</button>
+
+    <script>
+        let tbody = document.getElementById("tbody");
+
+        preencherTabela();
+
+        function preencherTabela(){
+            for(let i = 0; i < 3; i++){
+                tbody.innerHTML +=
+                `<tr>
+                    <td>Linha${i+1} - Dado1</td>
+                    <td>Linha${i+1} - Dado1</td>
+                    <td>Linha${i+1} - Dado1</td>
+                </tr>`;
+            }
+        }
+
+        function deletarLinha(){
+            tbody.deleteRow(0);
+            let novaLinha = tbody.insertRow(0);
+            let novaCelula1 = novaLinha.insertCell(0);
+            novaCelula1.textContent = "Linha1 - Dado1(M)"
+            let novaCelula2 = novaLinha.insertCell(1);
+            novaCelula2.textContent = "Linha1 - Dado2(M)"
+            let novaCelula3 = novaLinha.insertCell(2);
+            novaCelula3.textContent = "Linha1 - Dado3(M)"
+        }
+    </script>
+
+</body>
+</html>
