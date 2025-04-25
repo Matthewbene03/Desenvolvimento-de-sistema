@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titulo{
+    text-align: center;
+    padding: 3vh 0vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-around;
+
+    gap: 30px;
+    height: 89vh;
+}
+
+.containerForm{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    gap: 30px;
+}
+.centralizar70Porc{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.divEstados{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: black;
+
+    width: 100%;
+}
+
+select{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(248, 243, 243, 0.514);
+    border: 1px solid rgb(207, 207, 207);
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.divBtn{
+    text-align: right;
+    width: 100%;
+}
+
+button{
+    background-color: rgb(151, 129, 2);
+    color: rgb(241, 241, 241);
+    padding: 13px 23px;
+    border: 1px solid rgb(151, 129, 2);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+hr{
+    border: 1px solid black;
+    width: 100%;
+}
+
+.table{
+    width: 100%;
+    overflow: auto;
+    max-height: 500px;
+}
+
+.col-30Porc{
+    width: 30%;
+}
+
+.col-70Porc{
+    width: 70%;
+}
+
+table{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    width: 100%;
+    border-collapse: collapse;
+    max-height: 200px;
+    border: 2px solid red;
+}
+
+tbody{
+    overflow: scroll;
+}
+
+tr th{
+    background-color: rgb(207, 207, 207);
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+tr, td{
+    border: 2px solid rgb(207, 207, 207);
+    height: 50px;
+}

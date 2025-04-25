@@ -1,0 +1,70 @@
+<html>
+
+<head>
+	<title>Exemplo 03</title>
+	<meta charset="UTF-8">
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+	<link type="text/css" rel="stylesheet" href="css/estilos.css" />
+</head>
+
+<body>
+	<div class="container mt-4">
+		<h1 class="text-center border-bottom border-danger mb-4">Cadastro de pessoas</h1>
+		<form id="formulario" action="#" method="post">
+			<fieldset>
+				<div class="row mb-3">
+					<div class="col-md-3">
+						<label class="form-label" for="cpf">CPF</label>
+						<input class="form-control" id="cpf" name="cpf" type="text" required>
+					</div>
+					<div class="col-md-9">
+						<label class="form-label" for="nome">Nome</label>
+						<input class="form-control" id="nome" name="nome" type="text" required>
+					</div>					
+				</div>
+
+				<div class="row mb-3">
+					<div class="col-md-2">
+						<label class="form-label" for="cep">CEP</label>
+						<input class="form-control" id="cep" name="cep" type="text" required onblur="preencherEndereco()">
+					</div>
+					<div class="col-md-5">
+						<label class="form-label" for="logradouro">Logradouro</label>
+						<input class="form-control" id="logradouro" name="logradouro" type="text" required>
+					</div>	
+					<div class="col-md-5">
+						<label class="form-label" for="localidade">Localidade</label>
+						<input class="form-control" id="localidade" name="localidade" type="text" required>
+					</div>										
+				</div>
+				<div class="row mb-3">
+					<div class="col-12 d-flex justify-content-between">
+						<button class="btn btn-primary" type="reset">Cancelar</button>
+						<button class="btn btn-success" type="button" onclick="cadastrar()">Cadastrar</button>
+					</div>					
+				</div>		
+			</fieldset>
+		</form>
+
+		<table id="tabela" class="table">
+			<thead class="table-dark">
+				<tr>
+					<th>CPF</th>
+					<th>Nome</th>
+					<th>Localidade</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+
+	</div>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/jquery.mask.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.js"></script>
+	<script type="text/javascript" src="js/exemplo03.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/class.css">
+    <link rel="stylesheet" href="./css/user.css">
+    <title>Exerc1</title>
+</head>
+
+<body onload="inicializarLocalStorage()">
+
+    <section class="titulo">
+        <h1>Usuário</h1>
+        <hr class="centralizar80porc">
+    </section>
+
+    <section class="sectionPrincipal">
+        <div class="container centralizar80porc ">
+            <form class="grid2Col2Row">
+                <div class="LoginCad">
+                    <label for="id_loginCad">Login</label><br>
+                    <input id="id_loginCad" type="text">
+                </div>
+                <div class="senhaCad">
+                    <label for="id_senhaCad">Senha</label><br>
+                    <input id="id_senhaCad" type="password">
+                </div>
+                <div class="loginAut">
+                    <label for="id_loginAut">Login</label><br>
+                    <input id="id_loginAut" type="text">
+                </div>
+                <div class="senhaAut">
+                    <label for="id_senhaAut">Senha</label><br>
+                    <input id="id_senhaAut" type="password">
+                </div>
+
+                <div class="btnCalcular">
+                    <button id="id_BtnCadastrar" onclick="cadastrarUsuario()" type="button">Cadastrar</button>
+                    <button id="id_BtnAutenticar" onclick="autenticarUsuario()" type="button">Autenticar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="./js/indexScript.js"></script>
+</body>
+
+</html>

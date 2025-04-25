@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navMenu a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.navMenu a:hover{
+    border-bottom: 2px solid white;
+}
+
+.login{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.titulo{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.titulo h1{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+.titulo hr{
+    border: 1px solid black;
+}
+
+.grid2Col2Row{
+    display: grid;
+    grid-template-areas:
+    'Placa numVaga'
+    'Btn Btn';
+    gap: 15px;
+}
+
+.placaCarro{
+    grid-area: Placa;
+    width: 100%;
+}
+
+.numVaga{
+    grid-area: numVaga;
+    width: 100%;
+}
+
+.buttonReg{
+    grid-area: Btn;
+    width: 100%;
+    text-align: right;
+}
+
+input, select{
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    border: 1px solid rgb(168, 162, 162);
+    padding-left: 15px;
+    margin-top: 10px;
+}
+
+select{
+    cursor: pointer;
+}
+
+label{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+button{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 15px 20px;
+    background-color: white;
+    border: 1px solid rgb(168, 162, 162);
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(168, 162, 162);
+    border: 1px solid black;
+}
+
+.sectionTable{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.table{
+    width: 100%;
+}
+
+.table thead tr th{
+    text-align: left;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+tr{
+    height: 40px;
+    border-top: 2px solid rgb(185, 185, 185);
+    border-bottom: 2px solid rgb(185, 185, 185);
+    padding: 10px 20px;
+}
+
+.table tbody tr td{
+    text-align: left;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+table, th, td{
+    border-top: 1px solid rgb(182, 182, 182);
+    border-bottom: 1px solid rgb(182, 182, 182);
+    border-collapse: collapse;
+}
+
+th, td{
+    border-left: 3.5px solid rgb(182, 182, 182);
+    border-right: 3.5px solid rgb(182, 182, 182);
+}
+
+.col{
+    border-bottom: 3px solid rgb(182, 182, 182);
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+th, td{
+    padding: 15px;
+    text-align: left;
+}
+
+.backGroudGray{
+    background-color: rgb(199, 199, 199);
+}
+
+.backGroudWhite{
+    background-color: white;
+}

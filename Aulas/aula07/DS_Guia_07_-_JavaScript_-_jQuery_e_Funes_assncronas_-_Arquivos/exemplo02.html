@@ -1,0 +1,50 @@
+<html>
+
+<head>
+	<title>Exemplo 02</title>
+	<meta charset="UTF-8">
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+	<link type="text/css" rel="stylesheet" href="css/estilos.css" />
+</head>
+
+<body>
+	<div class="container mt-4">
+		<h1 class="text-center border-bottom border-danger mb-4">Assíncrono vs Síncrono</h1>
+		<form id="formulario" action="#" method="post">
+			<fieldset>
+				<div class="row mb-3">
+					<div class="col-12">
+						<label class="form-label" for="iteracoes">Interações</label>
+						<input class="form-control" id="iteracoes" name="iteracoes" type="text" required>
+					</div>
+				</div>
+				<div class="row mb-3">
+					<div class="col-12 d-flex justify-content-between">
+						<button class="btn btn-primary" type="button" onclick="executarSincrono()">Executar Síncrono</button>
+						<button class="btn btn-primary" type="button" onclick="executarAssincrono()">Executar Assíncrono</button>
+					</div>					
+				</div>
+				<div class="row mb-3">
+					<div class="col-12">
+						<label class="form-label" for="situacao">Situação</label>
+						<input class="form-control" id="situacao" name="situacao" type="text" readonly disabled>
+					</div>
+				</div>	
+				<div class="row mb-3">
+					<div class="col-12">
+						<label class="form-label" for="contador">Contador</label>
+						<input class="form-control" id="contador" name="contador" type="text" readonly disabled>
+					</div>
+				</div>							
+			</fieldset>
+		</form>
+	</div>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/jquery.mask.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.js"></script>
+	<script type="text/javascript" src="js/exemplo02.js"></script>
+</body>
+
+</html>

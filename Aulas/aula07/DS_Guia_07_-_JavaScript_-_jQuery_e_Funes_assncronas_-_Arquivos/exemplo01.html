@@ -1,0 +1,98 @@
+<html>
+
+<head>
+	<title>Exemplo 01</title>
+	<meta charset="UTF-8">
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+	<link type="text/css" rel="stylesheet" href="css/estilos.css" />
+</head>
+
+<body>
+
+	<div class="container mt-4">
+		<h1 class="text-center border-bottom border-danger mb-4">Exemplo 01</h1>
+		<form id="formulario" action="#" method="post">
+			<fieldset>
+				<div class="row mb-3">
+					<div class="col-md-2">
+						<label class="form-label" for="cpf">CPF</label>
+						<input class="form-control" id="cpf" name="cpf" type="text" required>
+					</div>
+					<div class="col-md-4">
+						<label class="form-label" for="nome">Nome</label>
+						<input class="form-control" id="nome" name="nome" type="text" required>
+					</div>
+					<div class="col-md-4">
+						<label class="form-label" for="curso">Curso</label>
+						<select class="form-select" id="curso" name="curso">
+							<option value='' selected disabled>Selecione um curso</option>
+							<option value='Química'>Química</option>
+							<option value='Edificações'>Edificações</option>
+							<option value='Desenvolvimento de Sistemas'>Desenvolvimento de Sistemas</option>
+						</select>						
+					</div>	
+					<div class="col-md-2">
+						<label class="form-label" for="nota">Nota Final</label>
+						<input class="form-control" id="nota" name="nota" type="text" required>
+					</div>															
+				</div>
+				<div class="row mb-3">
+					<div class="col-12 d-flex justify-content-end">
+						<button class="btn btn-success" type="button" onclick="cadastrar()">Cadastrar</button>
+					</div>					
+				</div>
+			</fieldset>
+		</form>
+
+		<table id="tabela" class="table">
+			<thead class="table-dark">
+				<tr>
+					<th>CPF</th>
+					<th>Nome</th>
+					<th>Curso</th>
+					<th>Nota</th>
+					<th>Situação</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+
+		<form id="formularioConsulta" action="#" method="post" class="row mt-5">
+			<fieldset>
+				<div class="row mb-3">
+					<div class="col-md-12">
+						<label class="form-label" for="criterio">Critério da consulta</label>
+						<select class="form-select" id="criterio" name="criterio">
+							<option value='' selected disabled>Selecione um curso</option>
+							<option value='Química'>Química</option>
+							<option value='Edificações'>Edificações</option>
+							<option value='Desenvolvimento de Sistemas'>Desenvolvimento de Sistemas</option>
+						</select>						
+					</div>														
+				</div>
+				<div class="row mb-3">
+					<div class="col-12 d-flex justify-content-between">
+						<button class="btn btn-primary" type="button" onclick="exibirTodos()">Exibir todos</button>
+						<button class="btn btn-success" type="button" onclick="consultar()">Consultar</button>
+					</div>					
+				</div>
+				<div class="row mb-3">
+					<div class="col-12">
+						<label class="form-label" for="quantidade">Quantidade de alunos</label>
+						<input class="form-control" id="quantidade" name="quantidade" type="text" readonly disabled>
+					</div>															
+				</div>				
+			</fieldset>
+		</form>		
+
+	</div>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/jquery.mask.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.js"></script>
+	<script type="text/javascript" src="js/exemplo01.js"></script>
+</body>
+
+</html>
