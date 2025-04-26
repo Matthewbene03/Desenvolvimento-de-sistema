@@ -22,21 +22,30 @@
 }
 
 .containerForm{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-areas:
+    "Regiao Estado"
+    "Btn Btn";
+    gap: 30px;
 
     width: 100%;
     gap: 30px;
 }
+
 .centralizar70Porc{
     width: 70%;
     margin: 0 auto;
 }
 
+.divRegiao{
+    grid-area: Regiao;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: black;
+}
+
 .divEstados{
+    grid-area: Estado;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     color: black;
@@ -56,6 +65,7 @@ select{
 }
 
 .divBtn{
+    grid-area: Btn;
     text-align: right;
     width: 100%;
 }
