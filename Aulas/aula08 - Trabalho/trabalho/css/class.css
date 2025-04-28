@@ -17,6 +17,11 @@
     margin: 0 auto;
 }
 
+.centralizar50PorcAltura{
+    height: 50%;
+    margin: auto 0;
+}
+
 .icone{
     height: 35px;
     margin-right: 10px;
