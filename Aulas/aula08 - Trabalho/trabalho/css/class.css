@@ -1,0 +1,23 @@
+.DFlex_row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.centralizar70Porc{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.centralizar90Porc{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.icone{
+    height: 35px;
+    margin-right: 10px;
+}

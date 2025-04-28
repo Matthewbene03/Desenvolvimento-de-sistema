@@ -1,0 +1,49 @@
+header{
+    height: 10vh;
+    background-color: darkgrey;
+}
+
+nav.DFlex_row{
+    justify-content: space-between;
+    height: 100%;
+
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.logo h1{
+    font-size: 40px;
+}
+
+.divUsuarioOn{
+    height: auto;
+}
+
+.usuarioOn{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid gray;
+    border-radius: 5px;
+    font-size: 17px;
+    padding: 10px;
+    width: 300px;
+}
+
+.BtnSair{
+    font-size: 17px;
+    padding: 10px;
+    text-decoration: none;
+    border: 2px solid rgb(165, 3, 3);
+    color: rgb(165, 3, 3);
+}
+
+.BtnSair:hover{
+    border: 2px solid red;
+}
