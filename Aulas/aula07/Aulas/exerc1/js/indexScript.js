@@ -19,6 +19,7 @@ let loginUser = document.getElementById("login");
 let tbody = document.getElementById("id_tbody");
 let select = document.getElementById("id_numVaga");
 let placaCarro = document.getElementById("id_placaCarro");
+let timeSetOutId = null;
 let usuarioOnline = new Usuario();
 
 
@@ -107,6 +108,7 @@ function autenticarUsuario() {
             usuarioOnline = new Usuario(userAutentificacao, senhaAut);
             localStorage.setItem("userOn", JSON.stringify(usuarioOnline));
             window.location.href = "controleVagas.html";
+            //iniciarTemporizador(); //Crio uma função assincrona para começar a contar o tempo. 
         } else {
             //Se o usuario não tiver cadastro, informa ele sobre.
             alert("Esse login e/ou senha não existe!!!");
@@ -120,11 +122,23 @@ function autenticarUsuario() {
     senhaAutenticar.value = "";
 }
 
+async function iniciarTemporizador() {
+    const tempo = 10000 //10 segundos
+
+    timeSetOutId = setTimeout(() => {
+        alert("Você ficou inativo por 10 segundos. Por favor, faça login novamente");
+        window.location.href = "index.html";
+        }, tempo);
+}
+
+async function cancelarTemporizador() {
+    // Cancelar setTimeout
+    clearTimeout(timeSetOutId);
+}
+
 function usuarioOn() {
     usuario = JSON.parse(localStorage.getItem("userOn"));
     loginUser.innerHTML += usuario.user;
-
-    
 }
 
 function reservarVaga() {
@@ -135,6 +149,8 @@ function reservarVaga() {
     for (let i = 0; i < vetVagasSelecionadas.length; i++) {
         vetVagasSelecionadas[i] = parseInt(vetVagasSelecionadas[i]); // Transforma todas os números que estão como texto em número inteiro.
     }
+    cancelarTemporizador();
+
     atualizarTabela(numVaga, placa, userOn, vetVagasSelecionadas); //Atualiza tabela
 }
 
@@ -200,5 +216,7 @@ function atualizarTabela(numVaga, placa, user, vetVagasSelecionadas) {
         localStorage.setItem("listaVagas",JSON.stringify(vetVagasSelecionadas));
         localStorage.setItem("placas",JSON.stringify(vetPlaca));
         localStorage.setItem("usuarioSelecionado",JSON.stringify(vetUsuarioSelecionado));
+
+        iniciarTemporizador();
     }
 }

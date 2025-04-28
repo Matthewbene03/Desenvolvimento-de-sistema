@@ -9,7 +9,7 @@
     <title>Exerc2</title>
 </head>
 
-<body onload="preencherLinhasTabela(), preencherSelect(), usuarioOn()">
+<body onload="preencherLinhasTabela(), preencherSelect(), usuarioOn(), iniciarTemporizador()">
 
     <header>
         <nav class="navMenu">
@@ -33,11 +33,11 @@
         <form class="grid2Col2Row">
             <div class="placaCarro">
                 <label for="id_placaCarro">Placa do carro</label><br>
-                <input type="text" id="id_placaCarro">
+                <input type="text" id="id_placaCarro" onfocus="cancelarTemporizador()" onblur="iniciarTemporizador()">
             </div>
             <div class="numVaga">
                 <label for="id_numVaga">Número da vaga</label><br>
-                <select name="numVaga" id="id_numVaga">
+                <select name="numVaga" id="id_numVaga" onfocus="cancelarTemporizador()" onblur="iniciarTemporizador()">
                     <option selected disabled>Selecione uma vaga</option>
                 </select>
             </div>
