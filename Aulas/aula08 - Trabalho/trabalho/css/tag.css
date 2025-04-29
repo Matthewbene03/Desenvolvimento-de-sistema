@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, h6{
     color: black;
 }
 
-p, a, input, label{
+p, a, input, label, select{
     font-family: "Karla", sans-serif;
     font-optical-sizing: auto;
     font-weight: normal;
@@ -31,7 +31,7 @@ a:hover{
     border-bottom: 2px solid black;
 }
 
-input {
+input, select{
     width: 100%;
     height: 60px;
     border: 1px solid rgb(201, 201, 201);
@@ -39,7 +39,7 @@ input {
     padding-left: 15px;
 }
 
-input::placeholder {
+input::placeholder, select::placeholder{
     font-family: "Karla", sans-serif;
     color: gray;
     font-size: 20px;

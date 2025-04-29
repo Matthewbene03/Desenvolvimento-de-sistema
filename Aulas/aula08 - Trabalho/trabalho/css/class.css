@@ -1,4 +1,4 @@
-.DFlex_row{
+.DFlex_row {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -7,22 +7,35 @@
     height: 100vh;
 }
 
-.centralizar70Porc{
+.logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.centralizar70Porc {
     width: 70%;
     margin: 0 auto;
 }
 
-.centralizar90Porc{
+.centralizar90Porc {
     width: 90%;
     margin: 0 auto;
 }
 
-.centralizar50PorcAltura{
-    height: 50%;
-    margin: auto 0;
+.centralizar80Porc {
+    width: 80%;
+    margin: 0 auto;
 }
 
-.icone{
+.icone {
     height: 35px;
     margin-right: 10px;
+}
+
+.buttonMenu{
+    background-color: darkgrey;
+    border: 2px solid darkgrey;
+    color: white;
 }

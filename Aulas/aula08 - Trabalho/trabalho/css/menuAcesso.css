@@ -11,15 +11,17 @@ nav.DFlex_row {
     margin-right: 2%;
 }
 
-.logo {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-}
-
 .logo h1 {
     font-size: 40px;
+}
+
+.logo a{
+    padding: 0px;
+    text-decoration: none;
+}
+
+.logo a:hover{
+    border-bottom: none;
 }
 
 .divUsuarioOn {

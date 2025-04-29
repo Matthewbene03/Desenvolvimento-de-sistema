@@ -19,6 +19,25 @@
     text-align: center;
 }
 
+.campoSenha{
+    position: relative;
+}
+
+#iconeVisibilityOff{
+    position: absolute;
+    right: 15px;
+    top: 40%;
+    cursor: pointer;
+}
+
+#iconeVisibilityOn{
+    display: none;
+    position: absolute;
+    right: 15px;
+    top: 40%;
+    cursor: pointer;
+}
+
 .textLogoDaEmpresa{
     display: none;
 }
