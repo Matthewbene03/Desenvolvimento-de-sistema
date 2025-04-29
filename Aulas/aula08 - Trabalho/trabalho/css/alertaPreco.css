@@ -23,7 +23,7 @@ section.secPrincipal{
     height: auto;
 }
 
-section h2{
+section.secPrincipal h2{
     font-size: 30px;
     text-decoration: underline;
     padding-top: 20px;
@@ -31,14 +31,14 @@ section h2{
     padding-bottom: 15px;
 }
 
-section p{
+section.secPrincipal p{
     font-size: 18px;
     color: black;
     font-weight: 400;
     padding-left: 25px;
 }
 
-section form{
+section.secPrincipal form{
     margin-top: 100px;
     height: auto;
 }
@@ -90,4 +90,162 @@ form label{
     text-align: center;
     padding-top: 20px;
     padding-bottom: 15px;
+}
+
+/*Modificações para a responsividade*/
+
+@media screen and (max-width: 767px){
+    section.secPrincipal{
+        width: 96%;
+    }
+
+    .valorEAcao{
+        flex-direction: column;
+    }
+    
+    .valorEAcao div{
+        flex: 100%;
+        width: 100%;
+    }
+
+    section h1{
+        font-size: 35px;
+        text-align: center;
+    }
+    
+    section.secPrincipal p{
+        font-size: 15px;
+    }
+
+    section.secPrincipal h2{
+        font-size: 25px;
+    }
+
+    .dadosProduto{
+        display: grid;
+        grid-template-areas:
+        "Id Valor"
+        "Produtos Produtos";
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        border: 2px solid blue;
+    }
+
+    .dadosProduto .divIdDoProduto{
+        grid-area: Id;
+        border: 2px solid red;
+
+    }
+
+    .dadosProduto .divValorProduto{
+        grid-area: Valor;
+        border: 2px solid red;
+
+    }
+
+    .dadosProduto .divProduto{
+        grid-area: Produtos;
+        border: 2px solid red;
+
+    }
+
+    form label{
+        font-size: 15px;
+    }
+
+    .buttonMenu{
+        padding: 15px 20px;
+    }
+}
+
+    
+@media screen and (max-width: 849px) and (min-width:768px){
+    section h1{
+        font-size: 35px;
+        text-align: center;
+    }
+    
+    section.secPrincipal p{
+        font-size: 15px;
+    }
+
+    section.secPrincipal h2{
+        font-size: 25px;
+    }
+
+    .dadosProduto{
+        display: grid;
+        grid-template-areas:
+        "Id Valor"
+        "Produtos Produtos";
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        border: 2px solid blue;
+    }
+
+    .dadosProduto .divIdDoProduto{
+        grid-area: Id;
+        border: 2px solid red;
+
+    }
+
+    .dadosProduto .divValorProduto{
+        grid-area: Valor;
+        border: 2px solid red;
+
+    }
+
+    .dadosProduto .divProduto{
+        grid-area: Produtos;
+        border: 2px solid red;
+
+    }
+
+    form label{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 850px){
+    section.secPrincipal p{
+        font-size: 15px;
+    }
+
+    .dadosProduto{
+        display: grid;
+        grid-template-areas:
+        "Id Valor"
+        "Produtos Produtos";
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        border: 2px solid blue;
+    }
+
+    .dadosProduto .divIdDoProduto{
+        grid-area: Id;
+        border: 2px solid red;
+
+    }
+
+    .dadosProduto .divValorProduto{
+        grid-area: Valor;
+        border: 2px solid red;
+
+    }
+
+    .dadosProduto .divProduto{
+        grid-area: Produtos;
+        border: 2px solid red;
+
+    }
+
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1024px) {
+    .dadosProduto{
+        gap: 50px;
+    }
 }
